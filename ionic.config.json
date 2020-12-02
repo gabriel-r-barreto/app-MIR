@@ -1,0 +1,8 @@
+{
+  "name": "appMir",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

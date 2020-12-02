@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Mission
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-item>
+    <ion-label>
+      <p>Mission: </p>{{statu2?.mission_text}}
+
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      <p>Mode: </p>{{statu2?.mode_text}}
+
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      <p>Velocity Angular: </p>{{statu2?.velocity.angular}}
+
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      <p>Velocity Linear: </p>{{statu2?.velocity.linear}}
+
+    </ion-label>
+  </ion-item>
+
+
+
+
+    <div class="jumbotron">
+    <button type="button" (click)="callApiStatus()" class="btn-primary col-sm" style="border-radius: 30px; margin-top: 120px; max-width: 150px;">Atualizar</button>
+    </div>
+
+
+
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+</ion-content>
+<style>
+
+.jumbotron{
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+</style>

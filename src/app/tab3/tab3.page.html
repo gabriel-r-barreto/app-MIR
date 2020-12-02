@@ -1,0 +1,36 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Location
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+
+  <ion-content>
+    <div #map class="map"></div>
+  </ion-content>
+
+
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
+</ion-content>
+
+<style>
+  .map {
+  height: 100%;
+  width: 100%;
+}
+</style>
